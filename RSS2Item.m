@@ -19,19 +19,19 @@
 - (id)initWithItemNode:(ANHTMLElement *)item {
 	if ((self = [super init])) {
 		NSCharacterSet * whitespace = [NSCharacterSet whitespaceAndNewlineCharacterSet];
-		ANHTMLElement * elTitle = [item elementWithName:@"title"];
-		ANHTMLElement * elLink = [item elementWithName:@"link"];
-		ANHTMLElement * elDescription = [item elementWithName:@"description"];
-		ANHTMLElement * elGuid = [item elementWithName:@"guid"];
-		ANHTMLElement * elPubDate = [item elementWithName:@"pubDate"];
+		ANHTMLElement * elTitle = [[item childElementsWithName:@"title"] lastObject];
+		ANHTMLElement * elLink = [[item childElementsWithName:@"link"] lastObject];
+		ANHTMLElement * elDescription = [[item childElementsWithName:@"description"] lastObject];
+		ANHTMLElement * elGuid = [[item childElementsWithName:@"guid"] lastObject];
+		ANHTMLElement * elPubDate = [[item childElementsWithName:@"pubDate"] lastObject];
 		
 		// Process unique information
 		if (elLink) {
-			NSString * urlString = [[elLink toPlainText] stringByTrimmingCharactersInSet:whitespace];
+			NSString * urlString = [[elLink stringValue] stringByTrimmingCharactersInSet:whitespace];
 			articleURL = [[NSURL alloc] initWithString:urlString];
 		}
 		if (elGuid) {
-			NSString * guid = [[elGuid toPlainText] stringByTrimmingCharactersInSet:whitespace];
+			NSString * guid = [[elGuid stringValue] stringByTrimmingCharactersInSet:whitespace];
 			identifier = [[RSSItemGUIDIdentifier alloc] initWithGUID:guid];
 		} else if (articleURL) {
 			identifier = [[RSSItemURLIdentifier alloc] initWithURL:articleURL];
@@ -39,11 +39,11 @@
 		
 		if (!identifier) return nil;
 		
-		summary = [[elDescription toPlainText] stringByTrimmingCharactersInSet:whitespace];
-		title = [[elTitle toPlainText] stringByTrimmingCharactersInSet:whitespace];
+		summary = [[elDescription stringValue] stringByTrimmingCharactersInSet:whitespace];
+		title = [[elTitle stringValue] stringByTrimmingCharactersInSet:whitespace];
 		
 		if (elPubDate) {
-			NSString * dateString = [[elPubDate toPlainText] stringByTrimmingCharactersInSet:whitespace];
+			NSString * dateString = [[elPubDate stringValue] stringByTrimmingCharactersInSet:whitespace];
 			creationDate = [self dateFromDateString:dateString];
 		}
 	}

@@ -14,15 +14,15 @@
 	if ((self = [super init])) {
 		NSCharacterSet * whitespace = [NSCharacterSet whitespaceCharacterSet];
 		NSMutableArray * itemList = [NSMutableArray array];
-		ANHTMLElement * elTitle = [element elementWithName:@"title"];
-		ANHTMLElement * elLink = [element elementWithName:@"link"];
-		ANHTMLElement * elSubtitle = [element elementWithName:@"subtitle"];
-		NSArray * entryElements = [element elementsWithName:@"entry"];
+		ANHTMLElement * elTitle = [[element childElementsWithName:@"title"] lastObject];
+		ANHTMLElement * elLink = [[element childElementsWithName:@"link"] lastObject];
+		ANHTMLElement * elSubtitle = [[element childElementsWithName:@"subtitle"] lastObject];
+		NSArray * entryElements = [element childElementsWithName:@"entry"];
 		
-		title = [[elTitle toPlainText] stringByTrimmingCharactersInSet:whitespace];
-		feedDescription = [[elSubtitle toPlainText] stringByTrimmingCharactersInSet:whitespace];
+		title = [[elTitle stringValue] stringByTrimmingCharactersInSet:whitespace];
+		feedDescription = [[elSubtitle stringValue] stringByTrimmingCharactersInSet:whitespace];
 		if (elLink) {
-			NSString * linkString = [elLink valueForAttribute:@"href"];
+			NSString * linkString = [elLink.attributes attributeForName:@"href"].attributeValue;
 			link = [[NSURL alloc] initWithString:linkString];
 		}
 		

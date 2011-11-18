@@ -21,19 +21,20 @@
 		FA0406DD146F2DDB0063D786 /* RSSParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0406DC146F2DDB0063D786 /* RSSParser.m */; };
 		FA0406E0146F2E6C0063D786 /* RSSAtomFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0406DF146F2E6C0063D786 /* RSSAtomFeed.m */; };
 		FA0406E3146F2E760063D786 /* RSS2Feed.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0406E2146F2E760063D786 /* RSS2Feed.m */; };
-		FA0406FA146F3C020063D786 /* ANHTMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0406EA146F3C020063D786 /* ANHTMLDocument.m */; };
-		FA0406FB146F3C020063D786 /* ANHTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0406EC146F3C020063D786 /* ANHTMLParser.m */; };
-		FA0406FC146F3C020063D786 /* ANHTMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0406EF146F3C020063D786 /* ANHTMLElement.m */; };
-		FA0406FD146F3C020063D786 /* ANHTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0406F1146F3C020063D786 /* ANHTMLNode.m */; };
-		FA0406FE146F3C020063D786 /* ANHTMLTextNode.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0406F3146F3C020063D786 /* ANHTMLTextNode.m */; };
-		FA0406FF146F3C020063D786 /* NSArray+Case.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0406F5146F3C020063D786 /* NSArray+Case.m */; };
-		FA040700146F3C020063D786 /* NSDictionary+Case.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0406F7146F3C020063D786 /* NSDictionary+Case.m */; };
-		FA040701146F3C020063D786 /* NSString+HTMLEsc.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0406F9146F3C020063D786 /* NSString+HTMLEsc.m */; };
-		FA349325147067BA0035CFFE /* ANListChange.m in Sources */ = {isa = PBXBuildFile; fileRef = FA349324147067BA0035CFFE /* ANListChange.m */; };
-		FA349328147069A50035CFFE /* ANListChangeInsert.m in Sources */ = {isa = PBXBuildFile; fileRef = FA349327147069A50035CFFE /* ANListChangeInsert.m */; };
-		FA34932B14706C230035CFFE /* ANListChangeRemove.m in Sources */ = {isa = PBXBuildFile; fileRef = FA34932A14706C220035CFFE /* ANListChangeRemove.m */; };
-		FA34932F14706FF70035CFFE /* ANListMutations.m in Sources */ = {isa = PBXBuildFile; fileRef = FA34932E14706FF70035CFFE /* ANListMutations.m */; };
-		FA3493321470702A0035CFFE /* ANListPreservedBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3493311470702A0035CFFE /* ANListPreservedBlock.m */; };
+		FA56EB031476EC24009FC410 /* ANHTMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = FA56EAF01476EC24009FC410 /* ANHTMLDocument.m */; };
+		FA56EB041476EC24009FC410 /* ANHTMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = FA56EAF21476EC24009FC410 /* ANHTMLElement.m */; };
+		FA56EB051476EC24009FC410 /* ANHTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = FA56EAF41476EC24009FC410 /* ANHTMLNode.m */; };
+		FA56EB061476EC24009FC410 /* ANHTMLTextNode.m in Sources */ = {isa = PBXBuildFile; fileRef = FA56EAF61476EC24009FC410 /* ANHTMLTextNode.m */; };
+		FA56EB071476EC24009FC410 /* ANHTMLAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = FA56EAF91476EC24009FC410 /* ANHTMLAttribute.m */; };
+		FA56EB081476EC24009FC410 /* ANHTMLAttributes+CSS.m in Sources */ = {isa = PBXBuildFile; fileRef = FA56EAFB1476EC24009FC410 /* ANHTMLAttributes+CSS.m */; };
+		FA56EB091476EC24009FC410 /* ANHTMLAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = FA56EAFD1476EC24009FC410 /* ANHTMLAttributes.m */; };
+		FA56EB0A1476EC24009FC410 /* ANHTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FA56EB001476EC24009FC410 /* ANHTMLParser.m */; };
+		FA56EB0B1476EC24009FC410 /* StringFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = FA56EB021476EC24009FC410 /* StringFeed.m */; };
+		FA56EB181476EC74009FC410 /* ANListMutations.m in Sources */ = {isa = PBXBuildFile; fileRef = FA56EB0E1476EC74009FC410 /* ANListMutations.m */; };
+		FA56EB191476EC74009FC410 /* ANListPreservedBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = FA56EB101476EC74009FC410 /* ANListPreservedBlock.m */; };
+		FA56EB1A1476EC74009FC410 /* ANListChange.m in Sources */ = {isa = PBXBuildFile; fileRef = FA56EB131476EC74009FC410 /* ANListChange.m */; };
+		FA56EB1B1476EC74009FC410 /* ANListChangeInsert.m in Sources */ = {isa = PBXBuildFile; fileRef = FA56EB151476EC74009FC410 /* ANListChangeInsert.m */; };
+		FA56EB1C1476EC74009FC410 /* ANListChangeRemove.m in Sources */ = {isa = PBXBuildFile; fileRef = FA56EB171476EC74009FC410 /* ANListChangeRemove.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -77,32 +78,34 @@
 		FA0406DF146F2E6C0063D786 /* RSSAtomFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSAtomFeed.m; sourceTree = "<group>"; };
 		FA0406E1146F2E750063D786 /* RSS2Feed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSS2Feed.h; sourceTree = "<group>"; };
 		FA0406E2146F2E760063D786 /* RSS2Feed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSS2Feed.m; sourceTree = "<group>"; };
-		FA0406E9146F3C020063D786 /* ANHTMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANHTMLDocument.h; sourceTree = "<group>"; };
-		FA0406EA146F3C020063D786 /* ANHTMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANHTMLDocument.m; sourceTree = "<group>"; };
-		FA0406EB146F3C020063D786 /* ANHTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANHTMLParser.h; sourceTree = "<group>"; };
-		FA0406EC146F3C020063D786 /* ANHTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANHTMLParser.m; sourceTree = "<group>"; };
-		FA0406EE146F3C020063D786 /* ANHTMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANHTMLElement.h; sourceTree = "<group>"; };
-		FA0406EF146F3C020063D786 /* ANHTMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANHTMLElement.m; sourceTree = "<group>"; };
-		FA0406F0146F3C020063D786 /* ANHTMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANHTMLNode.h; sourceTree = "<group>"; };
-		FA0406F1146F3C020063D786 /* ANHTMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANHTMLNode.m; sourceTree = "<group>"; };
-		FA0406F2146F3C020063D786 /* ANHTMLTextNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANHTMLTextNode.h; sourceTree = "<group>"; };
-		FA0406F3146F3C020063D786 /* ANHTMLTextNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANHTMLTextNode.m; sourceTree = "<group>"; };
-		FA0406F4146F3C020063D786 /* NSArray+Case.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Case.h"; sourceTree = "<group>"; };
-		FA0406F5146F3C020063D786 /* NSArray+Case.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Case.m"; sourceTree = "<group>"; };
-		FA0406F6146F3C020063D786 /* NSDictionary+Case.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Case.h"; sourceTree = "<group>"; };
-		FA0406F7146F3C020063D786 /* NSDictionary+Case.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Case.m"; sourceTree = "<group>"; };
-		FA0406F8146F3C020063D786 /* NSString+HTMLEsc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTMLEsc.h"; sourceTree = "<group>"; };
-		FA0406F9146F3C020063D786 /* NSString+HTMLEsc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTMLEsc.m"; sourceTree = "<group>"; };
-		FA349323147067BA0035CFFE /* ANListChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANListChange.h; sourceTree = "<group>"; };
-		FA349324147067BA0035CFFE /* ANListChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANListChange.m; sourceTree = "<group>"; };
-		FA349326147069A50035CFFE /* ANListChangeInsert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANListChangeInsert.h; sourceTree = "<group>"; };
-		FA349327147069A50035CFFE /* ANListChangeInsert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANListChangeInsert.m; sourceTree = "<group>"; };
-		FA34932914706C220035CFFE /* ANListChangeRemove.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANListChangeRemove.h; sourceTree = "<group>"; };
-		FA34932A14706C220035CFFE /* ANListChangeRemove.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANListChangeRemove.m; sourceTree = "<group>"; };
-		FA34932D14706FF70035CFFE /* ANListMutations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANListMutations.h; sourceTree = "<group>"; };
-		FA34932E14706FF70035CFFE /* ANListMutations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANListMutations.m; sourceTree = "<group>"; };
-		FA3493301470702A0035CFFE /* ANListPreservedBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANListPreservedBlock.h; sourceTree = "<group>"; };
-		FA3493311470702A0035CFFE /* ANListPreservedBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANListPreservedBlock.m; sourceTree = "<group>"; };
+		FA56EAEF1476EC24009FC410 /* ANHTMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANHTMLDocument.h; sourceTree = "<group>"; };
+		FA56EAF01476EC24009FC410 /* ANHTMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANHTMLDocument.m; sourceTree = "<group>"; };
+		FA56EAF11476EC24009FC410 /* ANHTMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANHTMLElement.h; sourceTree = "<group>"; };
+		FA56EAF21476EC24009FC410 /* ANHTMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANHTMLElement.m; sourceTree = "<group>"; };
+		FA56EAF31476EC24009FC410 /* ANHTMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANHTMLNode.h; sourceTree = "<group>"; };
+		FA56EAF41476EC24009FC410 /* ANHTMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANHTMLNode.m; sourceTree = "<group>"; };
+		FA56EAF51476EC24009FC410 /* ANHTMLTextNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANHTMLTextNode.h; sourceTree = "<group>"; };
+		FA56EAF61476EC24009FC410 /* ANHTMLTextNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANHTMLTextNode.m; sourceTree = "<group>"; };
+		FA56EAF81476EC24009FC410 /* ANHTMLAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANHTMLAttribute.h; sourceTree = "<group>"; };
+		FA56EAF91476EC24009FC410 /* ANHTMLAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANHTMLAttribute.m; sourceTree = "<group>"; };
+		FA56EAFA1476EC24009FC410 /* ANHTMLAttributes+CSS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ANHTMLAttributes+CSS.h"; sourceTree = "<group>"; };
+		FA56EAFB1476EC24009FC410 /* ANHTMLAttributes+CSS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ANHTMLAttributes+CSS.m"; sourceTree = "<group>"; };
+		FA56EAFC1476EC24009FC410 /* ANHTMLAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANHTMLAttributes.h; sourceTree = "<group>"; };
+		FA56EAFD1476EC24009FC410 /* ANHTMLAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANHTMLAttributes.m; sourceTree = "<group>"; };
+		FA56EAFF1476EC24009FC410 /* ANHTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANHTMLParser.h; sourceTree = "<group>"; };
+		FA56EB001476EC24009FC410 /* ANHTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANHTMLParser.m; sourceTree = "<group>"; };
+		FA56EB011476EC24009FC410 /* StringFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringFeed.h; sourceTree = "<group>"; };
+		FA56EB021476EC24009FC410 /* StringFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringFeed.m; sourceTree = "<group>"; };
+		FA56EB0D1476EC74009FC410 /* ANListMutations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANListMutations.h; sourceTree = "<group>"; };
+		FA56EB0E1476EC74009FC410 /* ANListMutations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANListMutations.m; sourceTree = "<group>"; };
+		FA56EB0F1476EC74009FC410 /* ANListPreservedBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANListPreservedBlock.h; sourceTree = "<group>"; };
+		FA56EB101476EC74009FC410 /* ANListPreservedBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANListPreservedBlock.m; sourceTree = "<group>"; };
+		FA56EB121476EC74009FC410 /* ANListChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANListChange.h; sourceTree = "<group>"; };
+		FA56EB131476EC74009FC410 /* ANListChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANListChange.m; sourceTree = "<group>"; };
+		FA56EB141476EC74009FC410 /* ANListChangeInsert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANListChangeInsert.h; sourceTree = "<group>"; };
+		FA56EB151476EC74009FC410 /* ANListChangeInsert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANListChangeInsert.m; sourceTree = "<group>"; };
+		FA56EB161476EC74009FC410 /* ANListChangeRemove.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANListChangeRemove.h; sourceTree = "<group>"; };
+		FA56EB171476EC74009FC410 /* ANListChangeRemove.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANListChangeRemove.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,10 +167,8 @@
 		FA0406A6146ED6B20063D786 /* ANRSS */ = {
 			isa = PBXGroup;
 			children = (
-				FA349321147066720035CFFE /* ListDiff */,
-				FA0406E8146F3C010063D786 /* HTML */,
-				FA0406DB146F2DDB0063D786 /* RSSParser.h */,
-				FA0406DC146F2DDB0063D786 /* RSSParser.m */,
+				FA56EB0C1476EC74009FC410 /* ListDiff */,
+				FA56EAED1476EC24009FC410 /* HTML */,
 				FA0406D7146F25850063D786 /* Feed */,
 				FA0406AA146EDA2D0063D786 /* Item */,
 			);
@@ -206,6 +207,8 @@
 		FA0406D7146F25850063D786 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				FA0406DB146F2DDB0063D786 /* RSSParser.h */,
+				FA0406DC146F2DDB0063D786 /* RSSParser.m */,
 				FA0406D8146F25F60063D786 /* RSSFeed.h */,
 				FA0406D9146F25F60063D786 /* RSSFeed.m */,
 				FA0406DE146F2E6C0063D786 /* RSSAtomFeed.h */,
@@ -216,60 +219,78 @@
 			name = Feed;
 			sourceTree = "<group>";
 		};
-		FA0406E8146F3C010063D786 /* HTML */ = {
+		FA56EAED1476EC24009FC410 /* HTML */ = {
 			isa = PBXGroup;
 			children = (
-				FA0406E9146F3C020063D786 /* ANHTMLDocument.h */,
-				FA0406EA146F3C020063D786 /* ANHTMLDocument.m */,
-				FA0406EB146F3C020063D786 /* ANHTMLParser.h */,
-				FA0406EC146F3C020063D786 /* ANHTMLParser.m */,
-				FA0406ED146F3C020063D786 /* Nodes */,
-				FA0406F8146F3C020063D786 /* NSString+HTMLEsc.h */,
-				FA0406F9146F3C020063D786 /* NSString+HTMLEsc.m */,
+				FA56EAEE1476EC24009FC410 /* ANHTMLDocument */,
+				FA56EAFE1476EC24009FC410 /* ANHTMLParser */,
 			);
 			path = HTML;
 			sourceTree = "<group>";
 		};
-		FA0406ED146F3C020063D786 /* Nodes */ = {
+		FA56EAEE1476EC24009FC410 /* ANHTMLDocument */ = {
 			isa = PBXGroup;
 			children = (
-				FA0406EE146F3C020063D786 /* ANHTMLElement.h */,
-				FA0406EF146F3C020063D786 /* ANHTMLElement.m */,
-				FA0406F0146F3C020063D786 /* ANHTMLNode.h */,
-				FA0406F1146F3C020063D786 /* ANHTMLNode.m */,
-				FA0406F2146F3C020063D786 /* ANHTMLTextNode.h */,
-				FA0406F3146F3C020063D786 /* ANHTMLTextNode.m */,
-				FA0406F4146F3C020063D786 /* NSArray+Case.h */,
-				FA0406F5146F3C020063D786 /* NSArray+Case.m */,
-				FA0406F6146F3C020063D786 /* NSDictionary+Case.h */,
-				FA0406F7146F3C020063D786 /* NSDictionary+Case.m */,
+				FA56EAF71476EC24009FC410 /* Attributes */,
+				FA56EAEF1476EC24009FC410 /* ANHTMLDocument.h */,
+				FA56EAF01476EC24009FC410 /* ANHTMLDocument.m */,
+				FA56EAF11476EC24009FC410 /* ANHTMLElement.h */,
+				FA56EAF21476EC24009FC410 /* ANHTMLElement.m */,
+				FA56EAF31476EC24009FC410 /* ANHTMLNode.h */,
+				FA56EAF41476EC24009FC410 /* ANHTMLNode.m */,
+				FA56EAF51476EC24009FC410 /* ANHTMLTextNode.h */,
+				FA56EAF61476EC24009FC410 /* ANHTMLTextNode.m */,
 			);
-			path = Nodes;
+			path = ANHTMLDocument;
 			sourceTree = "<group>";
 		};
-		FA349321147066720035CFFE /* ListDiff */ = {
+		FA56EAF71476EC24009FC410 /* Attributes */ = {
 			isa = PBXGroup;
 			children = (
-				FA34932C14706D100035CFFE /* Changes */,
-				FA34932D14706FF70035CFFE /* ANListMutations.h */,
-				FA34932E14706FF70035CFFE /* ANListMutations.m */,
-				FA3493301470702A0035CFFE /* ANListPreservedBlock.h */,
-				FA3493311470702A0035CFFE /* ANListPreservedBlock.m */,
+				FA56EAF81476EC24009FC410 /* ANHTMLAttribute.h */,
+				FA56EAF91476EC24009FC410 /* ANHTMLAttribute.m */,
+				FA56EAFA1476EC24009FC410 /* ANHTMLAttributes+CSS.h */,
+				FA56EAFB1476EC24009FC410 /* ANHTMLAttributes+CSS.m */,
+				FA56EAFC1476EC24009FC410 /* ANHTMLAttributes.h */,
+				FA56EAFD1476EC24009FC410 /* ANHTMLAttributes.m */,
 			);
-			name = ListDiff;
+			path = Attributes;
 			sourceTree = "<group>";
 		};
-		FA34932C14706D100035CFFE /* Changes */ = {
+		FA56EAFE1476EC24009FC410 /* ANHTMLParser */ = {
 			isa = PBXGroup;
 			children = (
-				FA349323147067BA0035CFFE /* ANListChange.h */,
-				FA349324147067BA0035CFFE /* ANListChange.m */,
-				FA349326147069A50035CFFE /* ANListChangeInsert.h */,
-				FA349327147069A50035CFFE /* ANListChangeInsert.m */,
-				FA34932914706C220035CFFE /* ANListChangeRemove.h */,
-				FA34932A14706C220035CFFE /* ANListChangeRemove.m */,
+				FA56EAFF1476EC24009FC410 /* ANHTMLParser.h */,
+				FA56EB001476EC24009FC410 /* ANHTMLParser.m */,
+				FA56EB011476EC24009FC410 /* StringFeed.h */,
+				FA56EB021476EC24009FC410 /* StringFeed.m */,
 			);
-			name = Changes;
+			path = ANHTMLParser;
+			sourceTree = "<group>";
+		};
+		FA56EB0C1476EC74009FC410 /* ListDiff */ = {
+			isa = PBXGroup;
+			children = (
+				FA56EB0D1476EC74009FC410 /* ANListMutations.h */,
+				FA56EB0E1476EC74009FC410 /* ANListMutations.m */,
+				FA56EB0F1476EC74009FC410 /* ANListPreservedBlock.h */,
+				FA56EB101476EC74009FC410 /* ANListPreservedBlock.m */,
+				FA56EB111476EC74009FC410 /* Changes */,
+			);
+			path = ListDiff;
+			sourceTree = "<group>";
+		};
+		FA56EB111476EC74009FC410 /* Changes */ = {
+			isa = PBXGroup;
+			children = (
+				FA56EB121476EC74009FC410 /* ANListChange.h */,
+				FA56EB131476EC74009FC410 /* ANListChange.m */,
+				FA56EB141476EC74009FC410 /* ANListChangeInsert.h */,
+				FA56EB151476EC74009FC410 /* ANListChangeInsert.m */,
+				FA56EB161476EC74009FC410 /* ANListChangeRemove.h */,
+				FA56EB171476EC74009FC410 /* ANListChangeRemove.m */,
+			);
+			path = Changes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,19 +355,20 @@
 				FA0406DD146F2DDB0063D786 /* RSSParser.m in Sources */,
 				FA0406E0146F2E6C0063D786 /* RSSAtomFeed.m in Sources */,
 				FA0406E3146F2E760063D786 /* RSS2Feed.m in Sources */,
-				FA0406FA146F3C020063D786 /* ANHTMLDocument.m in Sources */,
-				FA0406FB146F3C020063D786 /* ANHTMLParser.m in Sources */,
-				FA0406FC146F3C020063D786 /* ANHTMLElement.m in Sources */,
-				FA0406FD146F3C020063D786 /* ANHTMLNode.m in Sources */,
-				FA0406FE146F3C020063D786 /* ANHTMLTextNode.m in Sources */,
-				FA0406FF146F3C020063D786 /* NSArray+Case.m in Sources */,
-				FA040700146F3C020063D786 /* NSDictionary+Case.m in Sources */,
-				FA040701146F3C020063D786 /* NSString+HTMLEsc.m in Sources */,
-				FA349325147067BA0035CFFE /* ANListChange.m in Sources */,
-				FA349328147069A50035CFFE /* ANListChangeInsert.m in Sources */,
-				FA34932B14706C230035CFFE /* ANListChangeRemove.m in Sources */,
-				FA34932F14706FF70035CFFE /* ANListMutations.m in Sources */,
-				FA3493321470702A0035CFFE /* ANListPreservedBlock.m in Sources */,
+				FA56EB031476EC24009FC410 /* ANHTMLDocument.m in Sources */,
+				FA56EB041476EC24009FC410 /* ANHTMLElement.m in Sources */,
+				FA56EB051476EC24009FC410 /* ANHTMLNode.m in Sources */,
+				FA56EB061476EC24009FC410 /* ANHTMLTextNode.m in Sources */,
+				FA56EB071476EC24009FC410 /* ANHTMLAttribute.m in Sources */,
+				FA56EB081476EC24009FC410 /* ANHTMLAttributes+CSS.m in Sources */,
+				FA56EB091476EC24009FC410 /* ANHTMLAttributes.m in Sources */,
+				FA56EB0A1476EC24009FC410 /* ANHTMLParser.m in Sources */,
+				FA56EB0B1476EC24009FC410 /* StringFeed.m in Sources */,
+				FA56EB181476EC74009FC410 /* ANListMutations.m in Sources */,
+				FA56EB191476EC74009FC410 /* ANListPreservedBlock.m in Sources */,
+				FA56EB1A1476EC74009FC410 /* ANListChange.m in Sources */,
+				FA56EB1B1476EC74009FC410 /* ANListChangeInsert.m in Sources */,
+				FA56EB1C1476EC74009FC410 /* ANListChangeRemove.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

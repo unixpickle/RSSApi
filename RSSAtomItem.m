@@ -22,12 +22,12 @@
 	if ((self = [super init])) {
 		NSCharacterSet * whitespace = [NSCharacterSet whitespaceAndNewlineCharacterSet];
 
-		ANHTMLElement * elTitle = [entry elementWithName:@"title"];
-		ANHTMLElement * elLink = [entry elementWithName:@"link"];
-		ANHTMLElement * elId = [entry elementWithName:@"id"];
-		ANHTMLElement * elUpdated = [entry elementWithName:@"updated"];
-		ANHTMLElement * elPublished = [entry elementWithName:@"published"];
-		ANHTMLElement * elContent = [entry elementWithName:@"content"];
+		ANHTMLElement * elTitle = [[entry childElementsWithName:@"title"] lastObject];
+		ANHTMLElement * elLink = [[entry childElementsWithName:@"link"] lastObject];
+		ANHTMLElement * elId = [[entry childElementsWithName:@"id"] lastObject];
+		ANHTMLElement * elUpdated = [[entry childElementsWithName:@"updated"] lastObject];
+		ANHTMLElement * elPublished = [[entry childElementsWithName:@"published"] lastObject];
+		ANHTMLElement * elContent = [[entry childElementsWithName:@"content"] lastObject];
 		
 		if (elLink) {
 			[self handleLinkElement:elLink];
@@ -35,7 +35,7 @@
 		[self handleIDElement:elId];
 		if (!identifier) return nil;
 		
-		title = [[elTitle toPlainText] stringByTrimmingCharactersInSet:whitespace];
+		title = [[elTitle stringValue] stringByTrimmingCharactersInSet:whitespace];
 		
 		if (elUpdated) {
 			updateDate = [self dateFromDateElement:elUpdated];
@@ -45,7 +45,7 @@
 		}
 		
 		if (elContent) {
-			summary = [[elContent toPlainText] stringByTrimmingCharactersInSet:whitespace];
+			summary = [[elContent stringValue] stringByTrimmingCharactersInSet:whitespace];
 		}
 	}
 	return self;
@@ -53,8 +53,8 @@
 
 - (void)handleLinkElement:(ANHTMLElement *)aLink {
 	NSCharacterSet * whitespace = [NSCharacterSet whitespaceAndNewlineCharacterSet];
-	NSString * urlString = [[aLink valueForAttribute:@"href"] stringByTrimmingCharactersInSet:whitespace];
-	NSString * rel = [aLink valueForAttribute:@"rel"];
+	NSString * urlString = [[aLink.attributes attributeForName:@"href"].attributeValue stringByTrimmingCharactersInSet:whitespace];
+	NSString * rel = [[aLink.attributes attributeForName:@"href"].attributeValue stringByTrimmingCharactersInSet:whitespace];
 	if (rel) {
 		if ([rel isEqualToString:@"alternate"]) {
 			alternateURL = [[NSURL alloc] initWithString:urlString];
@@ -67,7 +67,7 @@
 - (void)handleIDElement:(ANHTMLElement *)elId {
 	NSCharacterSet * whitespace = [NSCharacterSet whitespaceAndNewlineCharacterSet];
 	if (elId) {
-		NSString * idString = [[elId toPlainText] stringByTrimmingCharactersInSet:whitespace];
+		NSString * idString = [[elId stringValue] stringByTrimmingCharactersInSet:whitespace];
 		identifier = [[RSSItemAtomIdentifier alloc] initWithIDString:idString];
 	} else if (articleURL) {
 		identifier = [[RSSItemURLIdentifier alloc] initWithURL:articleURL];
@@ -79,7 +79,7 @@
 - (NSDate *)dateFromDateElement:(ANHTMLElement *)elDate {
 	NSCharacterSet * whitespace = [NSCharacterSet whitespaceAndNewlineCharacterSet];
 	NSDate * theDate = nil;
-	NSString * dateString = [[elDate toPlainText] stringByTrimmingCharactersInSet:whitespace];
+	NSString * dateString = [[elDate stringValue] stringByTrimmingCharactersInSet:whitespace];
 	
 	NSDateFormatter * xmlFormatter = [[NSDateFormatter alloc] init];
 	[xmlFormatter setDateFormat:@"yyy-MM-dd'T'HH:mm:ss'Z'"];

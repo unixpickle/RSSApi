@@ -12,19 +12,19 @@
 
 - (id)initWithRootNode:(ANHTMLElement *)_element {
 	if ((self = [super init])) {
-		ANHTMLElement * element = [_element elementWithName:@"channel"];
+		ANHTMLElement * element = [[_element childElementsWithName:@"channel"] lastObject];
 		if (!element) return nil;
 		NSCharacterSet * whitespace = [NSCharacterSet whitespaceCharacterSet];
 		NSMutableArray * itemList = [NSMutableArray array];
-		ANHTMLElement * elTitle = [element elementWithName:@"title"];
-		ANHTMLElement * elLink = [element elementWithName:@"link"];
-		ANHTMLElement * elDescription = [element elementWithName:@"description"];
-		NSArray * itemElements = [element elementsWithName:@"item"];
+		ANHTMLElement * elTitle = [[element childElementsWithName:@"title"] lastObject];
+		ANHTMLElement * elLink = [[element childElementsWithName:@"link"] lastObject];
+		ANHTMLElement * elDescription = [[element childElementsWithName:@"description"] lastObject];
+		NSArray * itemElements = [element childElementsWithName:@"item"];
 		
-		title = [[elTitle toPlainText] stringByTrimmingCharactersInSet:whitespace];
-		feedDescription = [[elDescription toPlainText] stringByTrimmingCharactersInSet:whitespace];
+		title = [[elTitle stringValue] stringByTrimmingCharactersInSet:whitespace];
+		feedDescription = [[elDescription stringValue] stringByTrimmingCharactersInSet:whitespace];
 		if (elLink) {
-			NSString * linkString = [[elLink toPlainText] stringByTrimmingCharactersInSet:whitespace];
+			NSString * linkString = [[elLink stringValue] stringByTrimmingCharactersInSet:whitespace];
 			link = [[NSURL alloc] initWithString:linkString];
 		}
 		
