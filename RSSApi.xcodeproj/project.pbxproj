@@ -35,6 +35,8 @@
 		FA56EB1A1476EC74009FC410 /* ANListChange.m in Sources */ = {isa = PBXBuildFile; fileRef = FA56EB131476EC74009FC410 /* ANListChange.m */; };
 		FA56EB1B1476EC74009FC410 /* ANListChangeInsert.m in Sources */ = {isa = PBXBuildFile; fileRef = FA56EB151476EC74009FC410 /* ANListChangeInsert.m */; };
 		FA56EB1C1476EC74009FC410 /* ANListChangeRemove.m in Sources */ = {isa = PBXBuildFile; fileRef = FA56EB171476EC74009FC410 /* ANListChangeRemove.m */; };
+		FAA72029147700990059D7A6 /* RSSFeedStream.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA72028147700990059D7A6 /* RSSFeedStream.m */; };
+		FAA7202C1477496D0059D7A6 /* FeedStreamTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA7202B1477496D0059D7A6 /* FeedStreamTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -106,6 +108,10 @@
 		FA56EB151476EC74009FC410 /* ANListChangeInsert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANListChangeInsert.m; sourceTree = "<group>"; };
 		FA56EB161476EC74009FC410 /* ANListChangeRemove.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANListChangeRemove.h; sourceTree = "<group>"; };
 		FA56EB171476EC74009FC410 /* ANListChangeRemove.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANListChangeRemove.m; sourceTree = "<group>"; };
+		FAA72027147700990059D7A6 /* RSSFeedStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSFeedStream.h; sourceTree = "<group>"; };
+		FAA72028147700990059D7A6 /* RSSFeedStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSFeedStream.m; sourceTree = "<group>"; };
+		FAA7202A1477496D0059D7A6 /* FeedStreamTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedStreamTest.h; sourceTree = "<group>"; };
+		FAA7202B1477496D0059D7A6 /* FeedStreamTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedStreamTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +156,8 @@
 			isa = PBXGroup;
 			children = (
 				FA040697146ED5CC0063D786 /* main.m */,
+				FAA7202A1477496D0059D7A6 /* FeedStreamTest.h */,
+				FAA7202B1477496D0059D7A6 /* FeedStreamTest.m */,
 				FA04069B146ED5CC0063D786 /* RSSApi.1 */,
 				FA040699146ED5CC0063D786 /* Supporting Files */,
 			);
@@ -167,6 +175,7 @@
 		FA0406A6146ED6B20063D786 /* ANRSS */ = {
 			isa = PBXGroup;
 			children = (
+				FAA720251477002F0059D7A6 /* Watchers */,
 				FA56EB0C1476EC74009FC410 /* ListDiff */,
 				FA56EAED1476EC24009FC410 /* HTML */,
 				FA0406D7146F25850063D786 /* Feed */,
@@ -293,6 +302,15 @@
 			path = Changes;
 			sourceTree = "<group>";
 		};
+		FAA720251477002F0059D7A6 /* Watchers */ = {
+			isa = PBXGroup;
+			children = (
+				FAA72027147700990059D7A6 /* RSSFeedStream.h */,
+				FAA72028147700990059D7A6 /* RSSFeedStream.m */,
+			);
+			name = Watchers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -369,6 +387,8 @@
 				FA56EB1A1476EC74009FC410 /* ANListChange.m in Sources */,
 				FA56EB1B1476EC74009FC410 /* ANListChangeInsert.m in Sources */,
 				FA56EB1C1476EC74009FC410 /* ANListChangeRemove.m in Sources */,
+				FAA72029147700990059D7A6 /* RSSFeedStream.m in Sources */,
+				FAA7202C1477496D0059D7A6 /* FeedStreamTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

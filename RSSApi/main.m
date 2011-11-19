@@ -7,26 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "RSSParser.h"
-#import "ANListMutations.h"
+#import "FeedStreamTest.h"
 
 int main (int argc, const char * argv[]) {
 	@autoreleasepool {
-	    NSData * diff1 = [NSData dataWithContentsOfFile:@"/Users/alex/Desktop/diff1.rss"];
-		NSData * diff2 = [NSData dataWithContentsOfFile:@"/Users/alex/Desktop/diff2.rss"];
-		RSSFeed * feed1 = [RSSParser feedFromRSSDocument:diff1];
-		RSSFeed * feed2 = [RSSParser feedFromRSSDocument:diff2];
-		
-		ANListMutations * mutations = [[ANListMutations alloc] initWithOld:[feed1 items] new:[feed2 items]];
-		[mutations setCompareSelector:@selector(isEqualToItem:)];
-		ANListChange * change = [mutations rootChangeFromOldToNew];
-		[change applyTransformRecursively];
-		
-		NSLog(@"Changes from old to new:");
-		while (change != nil) {
-			NSLog(@"%@", change);
-			change = change.nextChange;
-		}
+		NSURL * theURL = [NSURL fileURLWithPath:@"/Users/alex/Desktop/change.rss"];
+	    RSSFeedStream * stream = [[RSSFeedStream alloc] initWithFeedURL:theURL];
+		FeedStreamTest * test = [[FeedStreamTest alloc] initWithStream:stream];
+		[test timerRefresh];
+		[[NSRunLoop currentRunLoop] run];
 	}
     return 0;
 }
